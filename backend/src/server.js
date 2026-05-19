@@ -4,6 +4,7 @@ import app from "./app.js";
 import { connectDB } from "./config/db.js";
 import authRoutes from "./routes/authRoutes.js";
 import { socketHandler } from "./websocket/socketHandler.js";
+import "./workers/messageWorker.js";
 
 app.use("/api/auth", authRoutes);
 
